@@ -90,6 +90,7 @@ body{
 	color: white;
 	text-align: center;
 	text-decoration: none;
+	transform: translate(-50%,-50%);
 	
 	position: center;
 }
@@ -133,6 +134,6 @@ body{
 	position: absolute;
 	top:50%;
 	left: 50%;
-	transform: translate(-50%,-50%)
+	transform: translate(-50%,-50%);
 }
 
