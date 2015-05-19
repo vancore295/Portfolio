@@ -1,6 +1,6 @@
 body{
 	margin: 0px;
-	/* background-color:#008080; */
+
 	background-color: white;
 	background-image: url('../img/colorful-squares.jpg');
 	background-size: 100%,100%;
@@ -13,7 +13,7 @@ body{
 	color: white;
 	border-radius: 0%;
 	
-	background-image: url ('../img/Black-And-Blue-Wallpapers.jpg');
+	background-image: url('../img/Black-And-Blue-Wallpapers.jpg');
 }
 .page-container-fluid {
 	position:center;
@@ -80,7 +80,6 @@ body{
 	padding-bottom: 30px;
 	text-align: center;
 	
-	/* background-color: #FF4500; */
 	background-color: #0e2f44;
 	
 	border-radius: 50%;
@@ -138,5 +137,6 @@ body{
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: 0;
 }
 
