@@ -15,14 +15,14 @@ function rotate()
 	var num_items = $(".menuitem").length;
 	
 	$(".menuitem").each(function(){
-		var angle = count *(Math.PI/180)
+		var angle = count *(Math.PI/180);
 		
 		var newX = centerX + Math.cos(angle) * radius - ($(this).width()/2);
 		var newY = centerY + Math.sin(angle) * radius - ($(this).height()/2);
 		
 		$(this).css("left",newX + "px").css("top",newY + "px");
 		
-		count += 360/num_items + speed;
+		count += (360/num_items) + speed;
 	})
 };
 
@@ -53,12 +53,12 @@ $(document).ready(function(){
 		}
 	});
 	$(".menuitem").hover(function(){
-		$(this).animate({"width": 150,"height": 150},100)
+		$(this).animate({"width": 150,"height": 150},100);
 		$(this).css("z-index",10);
 	},
 	function()
 	{
-		$(this).animate({"width": 125,"height": 125},100)
+		$(this).animate({"width": 125,"height": 125},100);
 		$(this).css("z-index",-10);
 	}
 	);
