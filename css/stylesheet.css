@@ -4,6 +4,7 @@ body{
 	background-color: white;
 	background-image: url('../img/colorful-squares.jpg');
 	background-size: 100%,100%;
+	font-size: 16px;
 }
 
 .page-container-fluid .container{
@@ -13,11 +14,11 @@ body{
 	color: white;
 	border-radius: 0%;
 }
+
 .page-container-fluid {
 	position:center;
 	background-color: none;
 }
-
 
 .jumbotron{
 	margin-top: auto;
@@ -40,6 +41,7 @@ body{
 .active{
 	background-color: #32CD32;
 }
+
 .navbar-default {
 	background-color: transparent;
 	border-color: transparent;
@@ -47,6 +49,7 @@ body{
 .navbar-inverse a{
 	color: black;
 }
+
 .centered{
 	position: absolute;
 	top:50%;
@@ -91,6 +94,7 @@ body{
 	
 	position: center;
 }
+
 .moadl-body{
 	padding: 15px;
 }
@@ -103,6 +107,7 @@ body{
 .navbar-default .navbar-collapse .navbar-right{
 	border-color: black;
 }
+
 .navbar-default .container-fluid .navbar-collapse .navbar-right a{
 	color: orange;
 	background-color: none;
@@ -115,9 +120,11 @@ body{
 .navbar-default .container-fluid .navbar-brand{
 	color: orange;
 }
+
 .panel-body{
 	padding: 10px;
 }
+
 .panel-heading{
 	padding: 10px;
 }
@@ -125,8 +132,9 @@ body{
 #resume{
 	background-color: white;
 	
+	border-style: inset;
 	border-color: black;
-	border-width: 2px;
+	border-width: 1px;
 	border-radius: 0%;
 }
 
@@ -138,3 +146,11 @@ body{
 	z-index: 0;
 }
 
+#header{
+	text-align: center;
+}
+
+#line{
+	height: 50px;
+	width: 100%;
+}

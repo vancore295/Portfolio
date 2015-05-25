@@ -62,4 +62,13 @@ $(document).ready(function(){
 		$(this).css("z-index",-10);
 	}
 	);
+	
+	var canvas = document.getElementById('line');
+	var context = canvas.getContext('2d');
+	
+	context.beginPath();
+	context.moveTo(0, canvas.height / 2);
+	context.lineTo(canvas.width,canvas.height / 2);
+	context.lineWidth = 20;
+	context.stroke();
 });
