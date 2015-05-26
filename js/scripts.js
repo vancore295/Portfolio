@@ -67,8 +67,8 @@ $(document).ready(function(){
 	var context = canvas.getContext('2d');
 	
 	context.beginPath();
-	context.moveTo(0, canvas.height / 2);
-	context.lineTo(canvas.width,canvas.height / 2);
+	context.moveTo(0, canvas.height / 2);//starting point
+	context.lineTo(canvas.width,canvas.height / 2);//end point
 	context.lineWidth = 20;
 	context.stroke();
 });
