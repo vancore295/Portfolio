@@ -8,7 +8,7 @@
 		<title>Madlibs</title>
 	</head>
 	
-	<body>
+	<body ng-app="madlibs">
 	<div class = "navbar navbar-default navbar-top" role = "navigation"><!--Header Start-->
 		<div class = "container-fluid">
 			<div class = "navbar-header">
@@ -44,7 +44,11 @@
 		</div>
 	</div>	
 	
-	<form>
+	<div class="main" ng-controller="madlibsController">
+		<h1>{{ title }}</h1>
+	</div>
+	
+	<!--<form>
 		<div class="container">
 			<div class = "form-group">
 				<h2>Chose your story</h2>
@@ -59,7 +63,7 @@
 				</label>
 			</div>
 		</div>
-	</form>
+	</form>-->
 	 
 	<!--Contact Modal-->
 	<div class = "modal fade" id = "contact" role = "dialog">
@@ -85,6 +89,10 @@
 		<script type = "text/javascript" src = "js/scripts.js"></script>
 		
 		<!--Angular js-->
-		<script type = "text/javascritpt" src = "js/angular.min,js"></script>
+		<script type = "text/javascript" src = "js/angular.min.js"></script>
+		<!--Modules-->
+		<script type = "text/javascript" src= "js/madlibsApp.js"></script>
+		<!--Controlers-->
+		<script type = "text/javascript" src = "js/controllers/madlibsController.js"></script>
 	</body>
 </html>
