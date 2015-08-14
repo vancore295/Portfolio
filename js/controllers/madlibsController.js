@@ -1,3 +1,3 @@
-app.controller('madlibsController',['$scope',function($scope){
-	$scope.title = "Madlibs";
+app.controller('MainController',['$scope',function($scope){
+  $scope.title = "Madlibs";
 }]);

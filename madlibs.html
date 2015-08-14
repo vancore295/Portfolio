@@ -5,6 +5,8 @@
 		<!--Bootstrap Css -->
 		<link href = "css/bootstrap.min.css" rel = "stylesheet"/>
 		<link href =  "css/stylesheet.css" rel = "stylesheet"/>
+		<!--Angular js-->
+		<script type = "text/javascript" src = "js/angular.min.js"></script>
 		<title>Madlibs</title>
 	</head>
 	
@@ -38,15 +40,15 @@
 		</div>
 	</div><!--Header End-->	
 	
-	<div class = "jumbotron">
-		<div class = "page-header">
-			<h2>Madlibs</h2>
+	<div class = "page-container-fluid">
+		<div class = "main"  ng-controller="MainController">
+			<div class="jumbotron">
+				<div class = "page-header">
+					<h1>{{ title }}</h1>
+				</div>
+			</div>
 		</div>
 	</div>	
-	
-	<div class="main" ng-controller="madlibsController">
-		<h1>{{ title }}</h1>
-	</div>
 	
 	<!--<form>
 		<div class="container">
@@ -88,10 +90,9 @@
 		<script type = "text/javascript" src = "js/bootstrap.min.js"></script>
 		<script type = "text/javascript" src = "js/scripts.js"></script>
 		
-		<!--Angular js-->
-		<script type = "text/javascript" src = "js/angular.min.js"></script>
 		<!--Modules-->
-		<script type = "text/javascript" src= "js/madlibsApp.js"></script>
+		<script type = "text/javascript" src = "js/madlibsApp.js"></script>
+		
 		<!--Controlers-->
 		<script type = "text/javascript" src = "js/controllers/madlibsController.js"></script>
 	</body>
