@@ -1,1 +1,1 @@
-var app = angular.module("madlibs",[]);
+var app = angular.module("madlibs", []);
