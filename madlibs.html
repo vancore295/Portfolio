@@ -33,6 +33,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="unity.html">Unity Games</a></li>
 							<li><a href="GameJams.html">Game Jams</a></li>
+							<li><a href="madlibs.html">Madlibs</a></li>
 						</ul>
 					</li>
 
@@ -45,62 +46,82 @@
 	</div>
 	<!--Header End-->
 
-	<div class="page-container-fluid">
+	<div class="page-container">
 		<div class="main" ng-controller="MainController">
 			<div class="jumbotron">
 				<div class="page-header">
 					<h1>{{ title }}</h1>
 				</div>
+				<p>Enter the apropreate words into the fields below, and they will fill in the madlib as you type.
+					<br/> Built using AngularJs.</p>
+			</div>
+			<div>
+				<form class="col-md-6 col-md-offset-3">
+					<!--User Input Section-->
+					<div class="form-group">
+						<div class="">
+							<div class="col-md-6">
+								<input class="form-control" type="text" ng-model="user.noun_plural" placeholder="Noun(plural)" id="madinput">
+								<input class="form-control" type="text" ng-model="user.occupation" placeholder="Occupation">
+								<input class="form-control" type="text" ng-model="user.animal_plural" placeholder="Animal(plural)">
+							</div>
+						</div>
+						<div class="">
+							<div class="col-md-6">
+								<input class="form-control" type="text" ng-model="user.place" placeholder="Place">
+								<input class="form-control" type="text" ng-model="user.verb" placeholder="Verb">
+								<input class="form-control" type="text" ng-model="user.noun" placeholder="Noun">
+							</div>
+						</div>
+					</div>
+				</form>
+				<form class="col-md-6 col-md-offset-3">
+					<!-- Madlib body-->
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">
+							<p>In the bok <i>War of the <span>{{ user.noun_plural }}</span></i>, the main character is an
+								<br/> anonymous <span>{{ user.occupation }}</span> who records the arrival of <span>{{user.animal_plural}}</span> in
+								<span>{{user.place}}.</span>
+								<br/> Needless to say, havoc reigns as the <span>{{user.animal_plural}}</span> continue to <span>{{user.verb}}</span>
+								<br/> everthing in sight, until they are killed by the common {{user.noun}}.</p>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
-	</div>
 
-	<!--<form>
-		<div class="container">
-			<div class = "form-group">
-				<h2>Chose your story</h2>
-				<label class="radio-inline">
-					<input type="radio" name="madlibchoice" id = "inlineradio1" value="option1">1
-				</label>
-				<label class="radio-inline">
-					<input type="radio" name="madlibchoice" id = "inlineradio2" value="option1">2
-				</label>
-				<label class="radio-inline">
-					<input type="radio" name="madlibchoice" id = "inlineradio3" value="option1">3
-				</label>
-			</div>
-		</div>
-	</form>-->
-
-	<!--Contact Modal-->
-	<div class="modal fade" id="contact" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4>Contact info</h4>
-				</div>
-				<div class="moadl-body">
-					<p>E-mail: <a href="mailto:bkernizan@hotmail.com">bkernizan@hotmail.com</a></p>
-					<p>LinkedIn: <a href="https://www.linkedin.com/pub/bomani-kernizan/b4/819/2b6" target="_blank"> Bomani Kernizan</a></p>
-					<p>Cell: (913) 991-7704</p>
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-primary" data-dismiss="modal">Close</button>
+		<!--Contact Modal-->
+		<div class="modal fade" id="contact" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>Contact info</h4>
+					</div>
+					<div class="moadl-body">
+						<p>E-mail: <a href="mailto:bkernizan@hotmail.com">bkernizan@hotmail.com</a></p>
+						<p>LinkedIn: <a href="https://www.linkedin.com/pub/bomani-kernizan/b4/819/2b6" target="_blank"> Bomani Kernizan</a></p>
+						<p>Cell: (913) 991-7704</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--Contact Modal end-->
-	<!--Bootstrap JQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+		<!--Contact Modal end-->
+		<!--Bootstrap JQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
 
-	<!--Modules-->
-	<script type="text/javascript" src="js/madlibsApp.js"></script>
+		<!--Modules-->
+		<script type="text/javascript" src="js/madlibsApp.js"></script>
 
-	<!--Controlers-->
-	<script type="text/javascript" src="js/controllers/madlibsController.js"></script>
+		<!--Controlers-->
+		<script type="text/javascript" src="js/controllers/madlibsController.js"></script>
 </body>
 
 </html>

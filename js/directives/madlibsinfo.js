@@ -1,9 +1,9 @@
-app.directive('madlibsinfo',function(){
-	return{
-		restrict: 'E',
-		scope:{
-			info:'='
-		},
-		templateUrl:'js/directive/madlibsinfo.html'
-	};
+app.directive('madlibsinfo', function () {
+  return {
+    restrict: 'E',
+    scope: {
+      info: '='
+    },
+    templateUrl: 'madlibsinfo.html'
+  };
 });
