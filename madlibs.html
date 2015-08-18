@@ -55,11 +55,20 @@
 				<p>Enter the apropreate words into the fields below, and they will fill in the madlib as you type.
 					<br/> Built using AngularJs.</p>
 			</div>
-			<div>
-				<form class="col-md-6 col-md-offset-3">
+			
+			<div class="col-md-6 col-md-offset-3">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle = "tab">Gettings Earthlings</a></li>
+					<li><a href="#tab2" data-toggle = "tab">Madlib 2</a></li>
+					<li><a href="#tab3" data-toggle = "tab">Madlib 3</a></li>
+				</ul>
+			</div>
+
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab1">
 					<!--User Input Section-->
-					<div class="form-group">
-						<div class="">
+					<form class="col-md-6 col-md-offset-3">
+						<div class="form-group">
 							<div class="col-md-6">
 								<label>Noun(plural)</label>
 								<input class="form-control" type="text" ng-model="user.noun_plural" placeholder="Noun(plural)" id="madinput">
@@ -68,8 +77,7 @@
 								<label>Animal(plural)</label>
 								<input class="form-control" type="text" ng-model="user.animal_plural" placeholder="Animal(plural)">
 							</div>
-						</div>
-						<div class="">
+
 							<div class="col-md-6">
 								<label>Place</label>
 								<input class="form-control" type="text" ng-model="user.place" placeholder="Place">
@@ -79,23 +87,28 @@
 								<input class="form-control" type="text" ng-model="user.noun" placeholder="Noun">
 							</div>
 						</div>
-					</div>
-				</form>
-				<form class="col-md-6 col-md-offset-3">
+					</form>
 					<!-- Madlib body-->
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<h3 class="panel-title">Panel title</h3>
+					<form class="col-md-6 col-md-offset-3">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title">Grettings Earthlings</h3>
+							</div>
+							<div class="panel-body">
+								<p>In the book <i>War of the <span>{{ user.noun_plural }}</span></i>, the main character is an
+									<br/> anonymous <span>{{ user.occupation }}</span> who records the arrival of a <span>{{user.animal_plural}}</span> in
+									<span>{{user.place}}.</span>
+									<br/> Needless to say, havoc reigns as the <span>{{user.animal_plural}}</span> continue to <span>{{user.verb}}</span>
+									<br/> everthing in sight, until they are killed by the common {{user.noun}}.</p>
+							</div>
 						</div>
-						<div class="panel-body">
-							<p>In the bok <i>War of the <span>{{ user.noun_plural }}</span></i>, the main character is an
-								<br/> anonymous <span>{{ user.occupation }}</span> who records the arrival of <span>{{user.animal_plural}}</span> in
-								<span>{{user.place}}.</span>
-								<br/> Needless to say, havoc reigns as the <span>{{user.animal_plural}}</span> continue to <span>{{user.verb}}</span>
-								<br/> everthing in sight, until they are killed by the common {{user.noun}}.</p>
-						</div>
-					</div>
-				</form>
+					</form>
+				</div>
+				<div class="tab-pane" id="tab2">
+					
+				</div>
+				<div class="tab-pane" id="tab3">
+				</div>
 			</div>
 		</div>
 	</div>
