@@ -58,8 +58,8 @@
 
 			<div class="col-md-6 col-md-offset-3">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#greetings" data-toggle="tab">Gettings Earthlings</a></li>
-					<li><a href="#war" data-toggle="tab">Wat</a></li>
+					<li class="active"><a href="#greetings" data-toggle="tab">Greetings Earthlings</a></li>
+					<li><a href="#war" data-toggle="tab">War</a></li>
 					<li><a href="#proverb" data-toggle="tab">Ancient Proverbs</a></li>
 				</ul>
 			</div>
@@ -92,7 +92,7 @@
 					<form class="col-md-6 col-md-offset-3">
 						<div class="panel panel-primary">
 							<div class="panel-heading">
-								<h3 class="panel-title">Grettings Earthlings</h3>
+								<h3 class="panel-title">Greetings Earthlings</h3>
 							</div>
 							<div class="panel-body">
 								<p>In the book <i>War of the <span><b>{{ greet.noun_plural }}</b></span></i>, the main character is an anonymous <span><b>{{ greet.occupation }}</b></span>									who records the arrival of a <span>{{user.animal_plural}}</span> in
@@ -194,13 +194,10 @@
 								<h3 class="panel-title">Ancient Proverbs</h3>
 							</div>
 							<div class="panel-body">
-								<p>"A/An <span><b>{{ proverb.noun1 }}</b></span> in the hans is worth <span><b>{{ proverb.number }}</b></span> in the
-								<span><b>{{ proverb.noun2 }}</b></span>."</p>
-								<p>"A/An <span><b>{{ proverb.adj1 }}</b></span> mouth <span><b>{{ proverb.verbs1 }}</b></span>
-								no feet."</p>
-								<p>"A/An <span><b>{{ proverb.adj2 }}</b></span> <span><b>{{ proverb.noun3 }}</b></span>
-								believes anything, but a <span><b>{{ proverb.adj3}}</b></span> <span><b>{{ proverb.noun3 }}</b></span>
-								 gives though to his <span><b>{{ proverb.noun4 }}</b></span>."</p>
+								<p>"A/An <span><b>{{ proverb.noun1 }}</b></span> in the hand is worth <span><b>{{ proverb.number }}</b></span> in the
+									<span><b>{{ proverb.noun2 }}</b></span>."</p>
+								<p>"A/An <span><b>{{ proverb.adj1 }}</b></span> mouth <span><b>{{ proverb.verbs1 }}</b></span> no feet."</p>
+								<p>"A/An <span><b>{{ proverb.adj2 }}</b></span> <span><b>{{ proverb.noun3 }}</b></span> believes anything, but a <span><b>{{ proverb.adj3}}</b></span>									<span><b>{{ proverb.noun3 }}</b></span> gives though to his <span><b>{{ proverb.noun4 }}</b></span>."</p>
 								<p>"A <span><b>{{ proverb.noun5 }}</b></span> in time <span><b>{{ proverb.verbs2 }}</b></span>."</p>
 							</div>
 						</div>
