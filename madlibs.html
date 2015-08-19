@@ -59,8 +59,8 @@
 			<div class="col-md-6 col-md-offset-3">
 				<ul class="nav nav-tabs">
 					<li class="active"><a href="#greetings" data-toggle="tab">Gettings Earthlings</a></li>
-					<li><a href="#war" data-toggle="tab">Madlib 2</a></li>
-					<li><a href="#tab3" data-toggle="tab">Madlib 3</a></li>
+					<li><a href="#war" data-toggle="tab">Wat</a></li>
+					<li><a href="#proverb" data-toggle="tab">Ancient Proverbs</a></li>
 				</ul>
 			</div>
 
@@ -96,7 +96,7 @@
 							</div>
 							<div class="panel-body">
 								<p>In the book <i>War of the <span><b>{{ greet.noun_plural }}</b></span></i>, the main character is an anonymous <span><b>{{ greet.occupation }}</b></span>									who records the arrival of a <span>{{user.animal_plural}}</span> in
-									<span><b>{{ greet.place }}</b>.</span> Needless to say, havoc reigns as the <span><b>{{ greet.animal_plural }}</b></span> continue to
+									<span><b>{{ greet.place }}</b>.</span> Needless to say, havoc reigns as the <span><b>{{ greet.animal_plural }}</b></span>									continue to
 									<span><b>{{ greet.verb }}</b></span> everthing in sight, until they are killed by the common <b>{{ greet.noun }}</b>.</p>
 							</div>
 						</div>
@@ -145,25 +145,45 @@
 							</div>
 							<div class="panel-body">
 								<p>It was durring the <span><b>{{ war.noun1 }}</b></span> when I was running through a
-								<span><b>{{ war.noun2 }}</b></span> when a <span><b>{{ war.noun3 }}</b></span> went off next to my
-								platoon. Our <span><b>{{ war.occupation }}</b></span> yelled for us to <span><b>{{ war.verb }}</b></span>
-								to the nearest <span><b>{{ war.palce }}</b></span> we could find. When we got to the <span><b>{{ war.place }}</b></span>
-								we <span><b>{{ war.verbing1 }}</b></span> to start a fire. As were starting the fire the enemy saw the
-								<span><b>{{ war.noun4 }}</b></span> from the fire and started <span><b>{{ war.verbing2 }}</b></span>
-								<span><b>{{ war.noun_plural }}</b></span> at us. We all quickly ducked behind the <span><b>{{ war.noun5 }}</b></span>
-								at the <span><b>{{ war.place }}</b></span> and returned fire. We quickly eliminated the enemy and were
-								<span><b>{{ war.emotion }}</b></span>
-									
+									<span><b>{{ war.noun2 }}</b></span> when a <span><b>{{ war.noun3 }}</b></span> went off next to my platoon. Our
+									<span><b>{{ war.occupation }}</b></span> yelled for us to <span><b>{{ war.verb }}</b></span> to the nearest <span><b>{{ war.palce }}</b></span>									we could find. When we got to the <span><b>{{ war.place }}</b></span> we <span><b>{{ war.verbing1 }}</b></span>									to start a fire. As were starting the fire the enemy saw the
+									<span><b>{{ war.noun4 }}</b></span> from the fire and started <span><b>{{ war.verbing2 }}</b></span>
+									<span><b>{{ war.noun_plural }}</b></span> at us. We all quickly ducked behind the <span><b>{{ war.noun5 }}</b></span>									at the <span><b>{{ war.place }}</b></span> and returned fire. We quickly eliminated the enemy and were
+									<span><b>{{ war.emotion }}</b></span>
 								</p>
 							</div>
 						</div>
 					</form>
 				</div>
-				<div class="tab-pane" id="tab3">
+				<div class="tab-pane" id="proverb">
 					<!--User Input-->
 					<form class="col-md-6 col-md-offset-3">
 						<div class="form-group">
 							<div class="col-md-6">
+								<label>Noun</label>
+								<input class="form-control" type="text" ng-model="proverb.noun1" placeholder="Noun">
+								<label>Number</label>
+								<input class="form-control" type="text" ng-model="proverb.number" placeholder="Number">
+								<label>Noun</label>
+								<input class="form-control" type="text" ng-model="proverb.noun2" placeholder="Noun">
+								<label>Adjective</label>
+								<input class="form-control" type="text" ng-model="proverb.adj1" placeholder="Adjective">
+								<label>Verb ending in s</label>
+								<input class="form-control" type="text" ng-model="proverb.verbs1" placeholder="Verb ending in s">
+								<label>Adjective</label>
+								<input class="form-control" type="text" ng-model="proverb.adj2" placeholder="Adjective">
+							</div>
+							<div class="col-md-6">
+								<label>Noun</label>
+								<input class="form-control" type="text" ng-model="proverb.noun3" placeholder="Noun">
+								<label>Adjective</label>
+								<input class="form-control" type="text" ng-model="proverb.adj3" placeholder="Adjective">
+								<label>Noun</label>
+								<input class="form-control" type="text" ng-model="proverb.noun4" placeholder="Noun">
+								<label>Noun</label>
+								<input class="form-control" type="text" ng-model="proverb.noun5" placeholder="Noun">
+								<label>Verb ending in s</label>
+								<input class="form-control" type="text" ng-model="proverb.verbs2" placeholder="Verb ending in s">
 							</div>
 						</div>
 					</form>
@@ -171,9 +191,17 @@
 					<form class="col-md-6 col-md-offset-3">
 						<div class="panel panel-primary">
 							<div class="panel-heading">
-								<h3 class="panel-title"></h3>
+								<h3 class="panel-title">Ancient Proverbs</h3>
 							</div>
 							<div class="panel-body">
+								<p>"A/An <span><b>{{ proverb.noun1 }}</b></span> in the hans is worth <span><b>{{ proverb.number }}</b></span> in the
+								<span><b>{{ proverb.noun2 }}</b></span>."</p>
+								<p>"A/An <span><b>{{ proverb.adj1 }}</b></span> mouth <span><b>{{ proverb.verbs1 }}</b></span>
+								no feet."</p>
+								<p>"A/An <span><b>{{ proverb.adj2 }}</b></span> <span><b>{{ proverb.noun3 }}</b></span>
+								believes anything, but a <span><b>{{ proverb.adj3}}</b></span> <span><b>{{ proverb.noun3 }}</b></span>
+								 gives though to his <span><b>{{ proverb.noun4 }}</b></span>."</p>
+								<p>"A <span><b>{{ proverb.noun5 }}</b></span> in time <span><b>{{ proverb.verbs2 }}</b></span>."</p>
 							</div>
 						</div>
 					</form>

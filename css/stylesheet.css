@@ -159,20 +159,5 @@ body{
 	background: transparent;
 }
 .form-control{
-	padding: 10px;
 	margin:10px;
-}
-.form-group{
-	background: transparent;
-}
-
-.tab-content{
-	background: transparent;
-}
-.tab{
-	background: transparent;
-}
-
-form{
-	background: transparent;
 }
