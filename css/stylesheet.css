@@ -91,7 +91,7 @@ body{
 	text-align: center;
 	text-decoration: none;
 	transform: translate(-50%,-50%);
-	
+	-ms-transform: translate(0,0);
 	position: center;
 }
 
