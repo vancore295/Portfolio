@@ -7,6 +7,14 @@ body{
 	font-size: 16px;
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+	color:orange;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus{
+	color: orange;
+}
+
 .page-container-fluid .container{
 	margin-top: -48px;
 	position:center;
@@ -39,7 +47,7 @@ body{
 }
 
 .active{
-	background-color: #32CD32;
+	/*background-color: #32CD32;*/
 }
 
 .navbar-default {
