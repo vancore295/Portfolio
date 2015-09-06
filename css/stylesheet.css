@@ -161,3 +161,7 @@ body{
 .form-control{
 	margin:10px;
 }
+
+span{
+	background-color: transparent;
+}
