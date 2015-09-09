@@ -1,9 +1,9 @@
-app.directive('carouselDisplay',function(){
-  return{
+app.directive('carouselDisplay', function () {
+  return {
     restrict: 'E',
-    scope:{
+    scope: {
       info: '='
     },
-    templateUrl: 'carousel.html'
+    templateUrl: 'js/directives/carousel.html'
   };
 });

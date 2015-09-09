@@ -1,1 +1,1 @@
-var app = angular.madule("gallery",[]);
+var app = angular.module("gallery",[]);
