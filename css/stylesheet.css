@@ -15,7 +15,7 @@ body{
 	color: orange;
 }
 
-.page-container-fluid .container{
+.page-container-fluid .container {
 	margin-top: -48px;
 	position:center;
 	
@@ -76,7 +76,6 @@ body{
 	position: absolute;
 	top: 50%;
 	bottom: 50%;
-	
 	width: 125px;
 	height: 125px;
 	color: black;
@@ -168,4 +167,9 @@ body{
 
 span{
 	background-color: transparent;
+}
+
+.container-fluid .container .page-header h3{
+	position: center;
+	color: red;
 }
