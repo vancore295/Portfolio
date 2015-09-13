@@ -27,6 +27,12 @@ function rotate() {
 
 
 $(document).ready(function () {
+
+    $("#menu-toggle").click(function (e) {
+		e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
 	$(".menuitem").css("z-index", -10);
 	setInterval(rotate, 3000 / 360);
 	$(document).mousemove(function (e) {
