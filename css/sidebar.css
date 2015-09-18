@@ -10,6 +10,10 @@
     padding-left: 250px;
 }
 
+p{
+    color:white;
+}
+
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
