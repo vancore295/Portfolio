@@ -47,19 +47,18 @@ body{
 .title:hover{
 	color:#2F4F4F;
 	Background:#FFD700;
+	
 	transform: scale(1.25,1.25);
 }
 
 .price{
 	text-align: center;
-	
 	font-weight: bold;
 	font-size: 14px;
 	color: #FFD700;
 	background: #2F4F4F;
+	
 	position: relative;
-	/*clear: both;
-	float: right;*/
 	right: -85%;
 	
 	width: 12%;
@@ -84,11 +83,13 @@ body{
 .price:hover{
 	color:#2F4F4F;
 	Background:#FFD700;
+	
 	transform: scale(1.25,1.25);
 }
 
 .icon{
 	max-height: 75%;
 	max-width: 75%;
+	
 	z-index: -2;
 }
