@@ -1,3 +1,94 @@
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .card{
+	overflow: hidden;
+	position: relative;
+	width: 25%;
+	display: inline-block;
 	
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+	width:25%;
+	height: 10%;
+	
+	z-index: 0;
+}
+
+
+
+.title{
+	text-align: center;
+	text-overflow: warp;
+	font-weight: bold;
+	font-size: 20px;
+	background: #2F4F4F;
+	color: #FFD700;
+	opacity: 2;
+
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	
+	position: relative;
+	z-index: -1;
+}
+
+.title:hover{
+	color:#2F4F4F;
+	Background:#FFD700;
+	transform: scale(1.25,1.25);
+}
+
+.price{
+	text-align: center;
+	
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFD700;
+	background: #2F4F4F;
+	position: relative;
+	/*clear: both;
+	float: right;*/
+	right: -85%;
+	
+	width: 12%;
+	height: 12%;
+	
+	/*top right bottom left*/
+	margin:10px 10px 10px 10px;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+		
+	border-top-left-radius: 0%;
+	border-bottom-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 0%;
+	
+	z-index: -1;
+}
+
+.price:hover{
+	color:#2F4F4F;
+	Background:#FFD700;
+	transform: scale(1.25,1.25);
+}
+
+.icon{
+	max-height: 75%;
+	max-width: 75%;
+	z-index: -2;
 }
