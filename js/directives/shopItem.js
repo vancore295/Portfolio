@@ -1,0 +1,9 @@
+app.directive('storeItem',function(){
+	return{
+		restrict:'E',
+		scope:{
+			info:'=',
+		},
+		templateUrl:'js\directives\shop_Item.html'
+	};
+});
