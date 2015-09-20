@@ -2,8 +2,8 @@ app.directive('storeItem',function(){
 	return{
 		restrict:'E',
 		scope:{
-			info:'=',
+			info:'='
 		},
-		templateUrl:'js\directives\shop_Item.html'
+		templateUrl:'js/directives/shopItem.html'
 	};
 });
