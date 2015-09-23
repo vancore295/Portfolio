@@ -1,9 +1,10 @@
 <h1 class="title">{{ info.title }}</h1>
-<img class="icon" ng-src="{{ info.imageMain }}" onmouseover="this.src='{{ info.imageAlt }}'" onmouseout="this.src='{{ info.imageMain }}'"
-/>
+<div ng-init="imgsrc= info.imageMain " ng-mouseover="imgsrc=info.imageAlt" ng-mouseout="imgsrc=info.imageMain">
+	<img class="icon" ng-src="{{ imgsrc }}" />
+</div>
 <button type="button" class="btn btn-default cart" data-toggle="tooltip" data-placement="right" title="Add to cart">
 	<span class="glyphicon glyphicon-shopping-cart"></span>
 </button>
 <button class="btn btn-default price">
-	<span>{{ info.price | currency  }}</span>
+	<span>{{ info.price | currency:"$":0  }}</span>
 </button>
