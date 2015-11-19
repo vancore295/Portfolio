@@ -19,7 +19,7 @@ app.controller("ShopControl", ['$scope', function ($scope) {
 			imageMain: 'http://papini.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/l/blackgold.jpg',
 			imageAlt: 'http://papini.co.uk/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/b/l/black_hoodie_back_1.jpg',
 			price: 15
-		},
+		}/*,
 		{
 			title: "Blue Hoodie",
 			imageMain: 'http://www.squirrelsports.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/h/o/hoody_royal_frt.jpg',
@@ -31,7 +31,7 @@ app.controller("ShopControl", ['$scope', function ($scope) {
 			imageMain: 'http://shop.kukrisports.co.uk/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/h/o/hoody_red_so5867-_2__900.jpg',
 			imageAlt: 'http://papini.co.uk/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/r/e/red_hoodie_back.jpg',
 			price: 15
-		}
+		}*/
 	];
 
 	$scope.shirts = [
