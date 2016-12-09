@@ -28,10 +28,10 @@ function rotate() {
 
 $(document).ready(function () {
 
-    $("#menu-toggle").click(function (e) {
+	$("#menu-toggle").click(function (e) {
 		e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+		$("#wrapper").toggleClass("toggled");
+	});
 
 	$(".menuitem").css("z-index", -10);
 	setInterval(rotate, 3000 / 360);
@@ -62,7 +62,7 @@ $(document).ready(function () {
 			$(this).animate({ "width": 125, "height": 125 }, 100);
 			$(this).css("z-index", -10);
 		}
-		);
+	);
 
 	var canvas = document.getElementById('line');
 	var context = canvas.getContext('2d');

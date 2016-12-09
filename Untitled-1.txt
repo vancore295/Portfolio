@@ -1,0 +1,39 @@
+angular.module('portfolioApp').config(['$stateProvider', '$urlRouterProvider',
+    function ($stateProvider, $urlRouterProvider) {
+
+        $urlRouterProvider.when("", '/home');
+        $urlRouterProvider.otherwise('/home');
+
+        $stateProvider
+            .state('home', {
+                url: '/home',
+                templateUrl: 'Templates/home.html',
+                controller: 'homeController'
+            })
+            .state('resume', {
+                url: '/resume',
+                templateUrl: 'Templates/home.html',
+                controller: 'resumeController'
+            })
+            .state('unity', {
+                url: '/unityGames',
+                templateUrl: 'unity.html',
+                controller: 'unityController'
+            })
+            .state('madlibs', {
+                url: '/madlibs',
+                templateUrl: 'Templates/madlibs.html',
+                controller: 'madlibsController'
+            })
+            .state('shop', {
+                url: '/shop',
+                templateUrl: 'Templates/ecomerce.html',
+                controller: 'shopController'
+            })
+            .state('gamejams', {
+                url: '/gamejams',
+                templateUrl: 'Templates/GameJams.html',
+                controller: 'gamejamController'
+            })
+    }
+])

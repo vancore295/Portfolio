@@ -3,12 +3,13 @@
 
 <head>
 	<!--Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css"
+	/>
 	<link href="css/stylesheet.css" rel="stylesheet" />
-	<title>Agassou Studios</title>
+	<title>Temp</title>
 </head>
 
-<body>
+<body ng-app="portfolioApp">
 	<div class="navbar navbar-default navbar-top" role="navigation">
 		<!--Header Start-->
 		<div class="container-fluid">
@@ -36,7 +37,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Dvelopment<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="Gallery.html" target="_blank">Cote-De-Fer</a></li>
+							<li><a href="Gallery.html">Cote-De-Fer</a></li>
 							<li>
 								<a href="ecomerce.html" target="_blank">Shop</a>
 							</li>
@@ -50,39 +51,10 @@
 		</div>
 	</div>
 	<!--Header End-->
-	<div class="page-container-fluid">
-		<div class="">
-			<div class="jumbotron" id="welcome">
-				<div class="container">
-					<h1>Welcome to Agassou Studios</h1>
-				</div>
-			</div>
-			<div class="container">
-				<div class="menuitem">
-					<a href="unity.html">Unity Games</a>
-				</div>
+	<div ui-view="">
 
-				<div class="menuitem">
-					<a href="#contact" data-toggle="modal">Contact</a>
-				</div>
-
-				<div class="menuitem">
-					<a href="resume.html">Resume</a>
-				</div>
-
-				<div class="menuitem">
-					<a href="GameJams.html">Game Jams</a>
-				</div>
-
-				<div class="menuitem">
-					<a data-toggle="tooltip" data-placement="left" title="Github" href="https://github.com/vancore295" target="_blank"><img src="img/GitHub-Mark-64px.png"></img>
-					</a>
-				</div>
-			</div>
-
-		</div>
 	</div>
-	<!--Page Container-->
+
 	<div class="modal fade" id="contact" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -100,20 +72,16 @@
 			</div>
 		</div>
 	</div>
-	<!--Bootstrap JQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<!--Inject javascript files-->
+	<script data-main="config" src="require.js"></script>
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-65601740-1', 'auto');
-  ga('send', 'pageview');
-
-	</script>
+			require(['config'],function(){
+				require(['jquery','angular','angular_ui_router','ui_bootstrap','bootstrap',
+				'ui_bootstrap','angular_animate','angular_touch','angular_route','google',
+				'app','routes','homeController','ecomerceController','galleryController',
+				'madlibsController','resumeController','shopcontroller','gamejamcontroller','unitycontroller'])
+			});
+		</script>
 </body>
 
 </html>

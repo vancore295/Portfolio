@@ -1,5 +1,4 @@
-var app = angular.module("gallery", []);
-app.controller('GalleryController', ['$scope', function ($scope) {
+angular.module('portfolioApp').controller('GalleryController', ['$scope', function ($scope) {
   $scope.folder = '../img/haiti/';
 
 }]);

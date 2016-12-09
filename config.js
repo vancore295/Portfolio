@@ -1,0 +1,30 @@
+requirejs.config({
+    baseUrl: 'js',
+    paths: {
+        angular: 'angular/angular.min',
+        angular_animate: 'angular/angular-animate.min',
+        angular_aria: 'angular/angular-aria.min',
+        angular_cookies: 'angular/angular-cookies.min',
+        angular_loader: 'angular/angular-loader.min',
+        angular_message: 'angular/angular-message-format.min',
+        angular_route: 'angular/angular-route.min',
+        angular_sanitize: 'angular/angular-sanitize.min',
+        angular_touch: 'angular/angular-touch.min',
+        angular_ui_router: 'angular/angular-ui-router.min',
+        ui_bootstrap:'angular-ui/ui-bootstrap-tpls-2.2.0.min',
+        bootstrap:'bootstrap/bootstrap.min',
+        jquery:'jquery-3.1.1.min',
+        google:'googleAnalutics',
+        app:'app',
+        routes:'routes',
+        homeController:'controllers/homeController',
+        ecomerceController:'controllers/ecomerceController',
+        galleryController:'controllers/galleryController',
+        madlibsController:'controllers/madlibsController',
+        resumeController:'controllers/resumeController',
+        shopcontroller:'controllers/shopcontroller',
+        gamejamcontroller:'controllers/gamejamController',
+        unitycontroller:'controllers/unityController',
+    }
+
+})

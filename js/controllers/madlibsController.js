@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', function ($scope) {
+angular.module('portfolioApp').controller('madlibsController', ['$scope', function ($scope) {
   $scope.title = "Madlibs";
 
   $scope.master = {};
