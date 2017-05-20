@@ -1,220 +1,143 @@
-<!DOCTYPE Html>
-<html lang="en">
+<div class="container" id="resume">
+    <!--Resume-->
+    <div class="container" id="header">
+        <h2>Bomani A. Kernizan</h2>
+        <h3>Game Developer / Front end Web Developer</h4>
+            <h4>Queens Village, NY 11429</h4>
+            <h4><strong>Email:</strong><a href="mailto:bkernizan@hotmail.com">bkernizan@hotmail.com</a></h4>
+            <h4><strong>LinkedIn: </strong><a href="https://www.linkedin.com/pub/bomani-kernizan/b4/819/2b6" target="_blank"> Bomani Kernizan</a></h4>
+            <h4><strong>Phone: </strong>(913)991-7704</h4>
+            <h4><a href="https://github.com/vancore295" target="_blank">Github</a></h4>
+    </div>
 
-<head>
-	<!--Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/stylesheet.css" rel="stylesheet" />
-	<title>Resume</title>
-</head>
+    <canvas id="line"></canvas>
 
-<body>
-	<div class="navbar navbar-default navbar-top" role="navigation">
-		<!--Header Start-->
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">Agassou Studios</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<!--Mobile side menu-->
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">Home</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Games<span class = "caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="unity.html">Unity Games</a></li>
-							<li><a href="GameJams.html">Game Jams</a></li>
-							<li><a href="madlibs.html">Madlibs</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Dvelopment<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="Gallery.html">Cote-De-Fer</a></li>
-							<li>
-								<a href="ecomerce.html" target="_blank">Shop</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="#contact" data-toggle="modal">Contact</a></li>
-				</ul>
-			</div>
-			<!--Mobile side menu-->
-		</div>
-	</div>
-	<!--Header End-->
+    <div class="container" id="education">
+        <!--Education-->
+        <h3><u>Education</u></h3>
+        <h4>Johnson County Community College</h4>
+        <ul>
+            <li>2013 - C#,C++, Agile Methodologies</li>
+            <li>2014 - C#(object oriented programming)</li>
+        </ul>
+        <h4>Code Academy</h4>
+        <ul>
+            <li>2015 - Web Development</li>
+        </ul>
+    </div>
+    <div class="container" id="jobs">
+        <h3><u>Job History</u></h3>
+        <ul>
+            <li><strong><a href="https://syntactx.com/">Syntactx</a></strong> (January 2016-Current)- Application developer III- full stack web developer creating customer facing applications. Built a dynamic and responsive SPA frontend using AngularJs 1.x.
+                The backend uses a three-tiered API built with Asp.net MVC framework. With data stored on SQL and MonogoDb.
+            </li>
+            <li><strong><a href="http://klikiq.com/" target="_blank"> Klikiq</a> </strong> (September 2015-January 2016) Developer- Front and back end web development.
+            </li>
+            <li><strong>Waterway Gas&Wash </strong> (March 2013-Dec 2014) Detailed cars and dealt with customer issues. Also trained new employees and sales.</li>
+        </ul>
+    </div>
+    <div class="container" id="skills">
+        <!--Skill List-->
+        <h3><u>Skills</u></h3>
+        <div class="col-md-3">
+            <ul>
+                <li>C#</li>
+                <li>ASP.net 4.x</li>
+                <li>MVC</li>
+                <li>SQL</li>
+                <li>MongoDb</li>
+                <li>JavaScript ES5/6</li>
+                <li>AngularJs 1.x</li>
+                <li>jQuery</li>
+            </ul>
+        </div>
 
-	<div class="container" id="resume">
-		<!--Resume-->
-		<div class="container" id="header">
-			<h2>Bomani A. Kernizan</h2>
-			<h3>Game Developer / Front end Web Developer</h4>
-			<h4>Queens Village, NY 11429</h4>
-			<h4><strong>Email:</strong><a href="mailto:bkernizan@hotmail.com">bkernizan@hotmail.com</a></h4>
-			<h4><strong>LinkedIn: </strong><a href="https://www.linkedin.com/pub/bomani-kernizan/b4/819/2b6" target="_blank"> Bomani Kernizan</a></h4>
-			<h4><strong>Phone: </strong>(913)991-7704</h4>
-			<h4><a href="https://github.com/vancore295" target="_blank">Github</a></h4>
-		</div>
-		
-	<canvas id = "line"></canvas>
-		
-		<div class = "container"  id = "education"><!--Education-->
-			<h3><u>Education</u></h3>
-			<h4>Johnson County Community College</h4>
-			<ul>
-				<li>2013 - C#,C++, Agile Methodologies</li>
-				<li>2014 - C#(object oriented programming)</li>
-			</ul>
-			<h4>Code Academy</h4>
-			<ul>
-				<li>2015 - Web Development</li>
-			</ul>
-		</div>
-		<div class="container" id="jobs">
-			<h3><u>Job History</u></h3>
-			<ul>
-				<li><strong><a href="http://klikiq.com/" target="_blank"> Klikiq</a> </strong>(September 2015-January 2016) Developer- Front and back end
-					web development.</li>
-				<li><strong>Waterway Gas& Wash </strong> (March 2013-Dec 2014) Detailed cars and dealt with customer issues. Also trained
-					new employees and sales.</li>
-			</ul>
-		</div>
-		<div class="container" id="skills">
-			<!--Skill List-->
-			<h3><u>Skills</u></h3>
-			<div class="col-md-3">
-				<ul>
-					<li>Html 5</li>
-					<li>Css 3</li>
-					<li>PHP</li>
-					<li>JavaScript</li>
-					<li>Unity 3D</li>
-					<li>Bootstrap</li>
-					<li>MS Word</li>
-					<li>SQL</li>
-				</ul>
-			</div>
+        <div class="col-md-3">
+            <ul>
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>Bootstrap</li>
+                <li>Ruby</li>
+                <li>PHP</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Powershell</li>
+            </ul>
+        </div>
 
-			<div class="col-md-3">
-				<ul>
-					<li>JQuery</li>
-					<li>C# 2013</li>
-					<li>C++ 2013</li>
-					<li>Ruby</li>
-					<li>Gamemaker Studio</li>
-					<li>Gimp</li>
-					<li>MS Excel</li>
-					<li>AngularJs</li>
-				</ul>
-			</div>
+        <div class="col-md-3">
+            <ul>
+                <li>Unity 3D</li>
+                <li>Gamemaker Studio</li>
+                <li>Object Oriented Design 2013</li>
+                <li>Agile Methodologies 2013</li>
+                <li>SCRUM 2013</li>
+                <li>Github</li>
+                <li>SVN</li>
+                <li>TFS</li>
+            </ul>
+        </div>
+    </div>
+    <!--Skill List-->
 
-			<div class="col-md-3">
-				<ul>
-					<li>Python</li>
-					<li>Object Oriented Design</li>
-					<li>Agile Methodologies 2013</li>
-					<li>SCRUM 2013</li>
-					<li>GIT/SVN</li>
-					<li>Photoshop</li>
-				</ul>
-			</div>
-		</div>
-		<!--Skill List-->
+    <div class="container" id="projects">
+        <h3><u>Projects</u></h3>
+        <div class="container">
 
-		<div class="container" id="projects">
-			<h3><u>Projects</u></h3>
-			<div class="container">
-				<h4 id="E-shop"><u></u></h4>
-				<ul>
-					<li>Built with AngularJs</li>
-					<li>Showcases the use of controllers and directives</li>
-				</ul>
-				<h4 id="Madlibs"><u></u></h4>
-				<ul>
-					<li>Built with AngularJs</li>
-					<li>Demonstrates the real time responsiveness of AngularJs</li>
-				</ul>
-				<h4 id="portfolio"><u>Portfolio</u></h4>
-				<ul>
-					<li>Scripted in HTML 5</li>
-					<li>Created custom Bootstrap theme using CSS 3, jQuery, and JavaScript</li>
-					<li>Scripted animated menu in JavaScript</li>
-					<li>Integrated Escape using Unity Web Player </li>
-					<li>Coded and complied in Notepad++</li>
-					<li>Hosted on Ubuntu LAMP Server and updated with FTP</li>
-				</ul>
-				<h4 id="escape"><u>Escape</u></h4>
-				<ul>
-					<li>Built in Unity 3D and exported to Unity Web Player</li>
-					<li>All code written in C# and complied in Visual Studio 2012</li>
-					<li>Designed all levels and game play</li>
-				</ul>
-				<h4 id="vision"><u>Vision Quest</u></h4>
-				<ul>
-					<li>Built in Unity 3D</li>
-					<li>All code written in C# and complied in Visual Studio 2012</li>
-					<li>Coordinated project merging</li>
-				</ul>
-				<h4 id="10k"><u>10k Heatbeats</u></h4>
-				<ul>
-					<li>Built in Gamemaker Studio</li>
-					<li>Player controls, enemy AI, and, UI scripted in Gamemaker script</li>
-					<li>Gimp to break down sprites sheets into animated gifs</li>
-				</ul>
-			</div>
-		</div>
-		<div class="container" id="achievements">
-			<!--Achievements-->
-			<h3><u>Achievements</u></h3>
-			<div class="col-md-6">
-				<ul>
-					<li>BPA national qualifier for business law and accounting </li>
-					<li>Developed rough budget and pitch for a privately commissioned project </li>
-				</ul>
-			</div>
-		</div>
-		<!--Achievements-->
-	</div>
-	<!--Resume-->
-	</div>
-	<!--Page Container-->
-	<div class="modal fade" id="contact" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4>Contact info</h4>
-				</div>
-				<div class="moadl-body">
-					<p>E-mail: <a href="mailto:bkernizan@hotmail.com">bkernizan@hotmail.com</a></p>
-					<p>LinkedIn: <a href="https://www.linkedin.com/pub/bomani-kernizan/b4/819/2b6" target="_blank"> Bomani Kernizan</a></p>
-					<p>Cell: (913) 991-7704</p>
-				</div>
-				<div class="modal-footer">
-					<button class="btn btn-primary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--Bootstrap JQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            <h4 id="portfolio"><u>Portfolio</u></h4>
+            <ul>
+                <li>written in HTML 5</li>
+                <li>Created custom Bootstrap theme using CSS 3, jQuery, and JavaScript</li>
+                <li>Scripted animated menu in JavaScript</li>
+                <li>Integrated Escape using Unity Web Player </li>
+                <li>Coded and complied in Notepad++</li>
+                <li>Hosted on Ubuntu LAMP Server and updated with FTP</li>
+            </ul>
 
-  ga('create', 'UA-65601740-1', 'auto');
-  ga('send', 'pageview');
-	</script>
-</body>
+            <h4 id="escape"><u>Escape</u></h4>
+            <ul>
+                <li>Built in Unity 3D and exported to Unity Web Player</li>
+                <li>All code written in C# and complied in Visual Studio 2012</li>
+                <li>Designed all levels and game play</li>
+            </ul>
 
-</html>
+            <h4 id="vision"><u>Vision Quest</u></h4>
+            <ul>
+                <li>Built in Unity 3D</li>
+                <li>All code written in C# and complied in Visual Studio 2012</li>
+                <li>Coordinated project merging</li>
+            </ul>
+
+
+            <h4 id="E-shop"><u></u></h4>
+            <ul>
+                <li>Built with AngularJs</li>
+                <li>Showcases the use of controllers and directives</li>
+            </ul>
+            <h4 id="10k"><u>10k Heatbeats</u></h4>
+            <ul>
+                <li>Built in Gamemaker Studio</li>
+                <li>Player controls, enemy AI, and, UI scripted in Gamemaker script</li>
+                <li>Gimp to break down sprites sheets into animated gifs</li>
+            </ul>
+
+            <h4 id="Madlibs"><u></u></h4>
+            <ul>
+                <li>Built with AngularJs</li>
+                <li>Demonstrates the real time responsiveness of AngularJs</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="achievements">
+        <!--Achievements-->
+        <h3><u>Achievements</u></h3>
+        <div class="col-md-6">
+            <ul>
+                <li>BPA national qualifier for business law and accounting </li>
+                <li>Developed rough budget and pitch for a privately commissioned project </li>
+                <li>SOCRA certification 2016</li>
+            </ul>
+        </div>
+    </div>
+    <!--Achievements-->
+</div>
