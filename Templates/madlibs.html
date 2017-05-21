@@ -1,160 +1,167 @@
-<div class="page-container">
-    <div>
-        <div class="jumbotron">
-            <div class="page-header">
-                <h1>{{ title }}</h1>
-            </div>
-            <p>Enter the apropreate words into the fields below, and they will fill in the madlib as you type.
-                <br/> Built using AngularJs.</p>
-        </div>
+<div class="jumbotron">
+    <div class="page-header">
+        <h1>{{ title }}</h1>
+    </div>
+    <p>Enter the apropreate words into the fields below, and they will fill in the madlib as you type.
+        <br/> Built using AngularJs.</p>
+</div>
 
-        <div class="col-md-6 col-md-offset-3">
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#greetings" data-toggle="tab">Greetings Earthlings</a></li>
-                <li><a href="#war" data-toggle="tab">War</a></li>
-                <li><a href="#proverb" data-toggle="tab">Ancient Proverbs</a></li>
-            </ul>
-        </div>
+<uib-tabset active="activeJustified" justified="true">
+    <uib-tab heading="Greetings Earthlings" index="0" active="true">
+        <uib-tab-heading>
+            Greetings Earthlings
+        </uib-tab-heading>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Noun(plural)</label>
+                    <input class="form-control" type="text" ng-model="greet.noun_plural" placeholder="Noun(plural)" id="madinput">
+                    <label>Occupation</label>
+                    <input class="form-control" type="text" ng-model="greet.occupation" placeholder="Occupation">
+                    <label>Animal(plural)</label>
+                    <input class="form-control" type="text" ng-model="greet.animal_plural" placeholder="Animal(plural)">
+                </div>
 
-        <div class="tab-content">
-            <div class="tab-pane active" id="greetings">
-                <!--User Input Section-->
-                <form class="col-md-6 col-md-offset-3">
-                    <div class="form-group">
-                        <div class="col-md-6">
-                            <label>Noun(plural)</label>
-                            <input class="form-control" type="text" ng-model="greet.noun_plural" placeholder="Noun(plural)" id="madinput">
-                            <label>Occupation</label>
-                            <input class="form-control" type="text" ng-model="greet.occupation" placeholder="Occupation">
-                            <label>Animal(plural)</label>
-                            <input class="form-control" type="text" ng-model="greet.animal_plural" placeholder="Animal(plural)">
-                        </div>
+                <div class="col-md-4">
+                    <label>Place</label>
+                    <input class="form-control" type="text" ng-model="greet.place" placeholder="Place">
+                    <label>Verb</label>
+                    <input class="form-control" type="text" ng-model="greet.verb" placeholder="Verb">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="greet.noun" placeholder="Noun">
+                </div>
 
-                        <div class="col-md-6">
-                            <label>Place</label>
-                            <input class="form-control" type="text" ng-model="greet.place" placeholder="Place">
-                            <label>Verb</label>
-                            <input class="form-control" type="text" ng-model="greet.verb" placeholder="Verb">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="greet.noun" placeholder="Noun">
-                        </div>
-                    </div>
-                </form>
-                <!-- Madlib body-->
-                <form class="col-md-6 col-md-offset-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Greetings Earthlings</h3>
-                        </div>
-                        <div class="panel-body">
+                <div class="col-md-4">
+                    <uib-accordion>
+                        <uib-accordion-group is-open="true" panel-class="panel-primary">
+                            <uib-accordion-heading>
+                                Greetings Earthlings
+                            </uib-accordion-heading>
                             <p>In the book <i>War of the <span><b>{{ greet.noun_plural }}</b></span></i>, the main character is an anonymous <span><b>{{ greet.occupation }}</b></span> who records the arrival of a <span>{{user.animal_plural}}</span> in
                                 <span><b>{{ greet.place }}</b>.</span> Needless to say, havoc reigns as the <span><b>{{ greet.animal_plural }}</b></span> continue to
                                 <span><b>{{ greet.verb }}</b></span> everthing in sight, until they are killed by the common <b>{{ greet.noun }}</b>.</p>
-                        </div>
-                    </div>
-                </form>
+                        </uib-accordion-group>
+                    </uib-accordion>
+                </div>
             </div>
-            <div class="tab-pane" id="war">
-                <!--User Input-->
-                <form class="col-md-6 col-md-offset-3">
-                    <div class="form-group">
-                        <div class="col-md-6">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="war.noun1" placeholder="Noun">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="war.noun2" placeholder="Noun">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="war.noun3" placeholder="Noun">
-                            <label>Occupation</label>
-                            <input class="form-control" type="text" ng-model="war.occupation" placeholder="Occupation">
-                            <label>Verb</label>
-                            <input class="form-control" type="text" ng-model="war.verb1" placeholder="Verb">
-                            <label>Place</label>
-                            <input class="form-control" type="text" ng-model="war.place" placeholder="Place">
-                        </div>
+        </div>
+    </uib-tab>
 
-                        <div class="col-md-6">
-                            <label>Verb ending in "ing"</label>
-                            <input class="form-control" type="text" ng-model="war.verbing1" placeholder="Verb ending in ing">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="war.noun4" placeholder="Noun">
-                            <label>Verb ending in "ing"</label>
-                            <input class="form-control" type="text" ng-model="war.verbing2" placeholder="Verb ending in ing">
-                            <label>Noun(plural)</label>
-                            <input class="form-control" type="text" ng-model="war.noun_plural" placeholder="Noun(plural)">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="war.noun5" placeholder="Noun">
-                            <label>Emotion</label>
-                            <input class="form-control" type="text" ng-model="war.emotion" placeholder="Emotion">
-                        </div>
-                    </div>
-                </form>
-                <!--Madlib-->
-                <form class="col-md-6 col-md-offset-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">War</h3>
-                        </div>
-                        <div class="panel-body">
+
+    <uib-tab heading="Ancient Proverbs" index="1" active="false">
+        <uib-tab-heading>
+            Ancient Proverbs
+        </uib-tab-heading>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="proverb.noun1" placeholder="Noun">
+                    <label>Number</label>
+                    <input class="form-control" type="text" ng-model="proverb.number" placeholder="Number">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="proverb.noun2" placeholder="Noun">
+                    <label>Adjective</label>
+                    <input class="form-control" type="text" ng-model="proverb.adj1" placeholder="Adjective">
+                    <label>Verb ending in s</label>
+                    <input class="form-control" type="text" ng-model="proverb.verbs1" placeholder="Verb ending in s">
+                    <label>Adjective</label>
+                    <input class="form-control" type="text" ng-model="proverb.adj2" placeholder="Adjective">
+                </div>
+
+                <div class="col-md-4">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="proverb.noun3" placeholder="Noun">
+                    <label>Adjective</label>
+                    <input class="form-control" type="text" ng-model="proverb.adj3" placeholder="Adjective">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="proverb.noun4" placeholder="Noun">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="proverb.noun5" placeholder="Noun">
+                    <label>Verb ending in s</label>
+                    <input class="form-control" type="text" ng-model="proverb.verbs2" placeholder="Verb ending in s">
+                </div>
+
+                <div class="col-md-4">
+                    <uib-accordion>
+                        <uib-accordion-group is-open="true" panel-class="panel-primary">
+                            <uib-accordion-heading>
+                                Ancient Proverbs
+                            </uib-accordion-heading>
+                            <p>"A/An <span><b>{{ proverb.noun1 }}</b></span> in the hand is worth <span><b>{{ proverb.number }}</b></span> in the
+                                <span><b>{{ proverb.noun2 }}</b></span>."</p>
+                            <p>"A/An <span><b>{{ proverb.adj1 }}</b></span> mouth <span><b>{{ proverb.verbs1 }}</b></span> no feet."</p>
+                            <p>"A/An <span><b>{{ proverb.adj2 }}</b></span> <span><b>{{ proverb.noun3 }}</b></span> believes anything, but a <span><b>{{ proverb.adj3}}</b></span> <span><b>{{ proverb.noun3 }}</b></span> gives though to his <span><b>{{ proverb.noun4 }}</b></span>."</p>
+                            <p>"A <span><b>{{ proverb.noun5 }}</b></span> in time <span><b>{{ proverb.verbs2 }}</b></span>."</p>
+                        </uib-accordion-group>
+                    </uib-accordion>
+                </div>
+            </div>
+        </div>
+    </uib-tab>
+
+
+    <uib-tab heading="War" index="2" active="false">
+        <uib-tab-heading>
+            War
+        </uib-tab-heading>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="war.noun1" placeholder="Noun">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="war.noun2" placeholder="Noun">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="war.noun3" placeholder="Noun">
+                    <label>Occupation</label>
+                    <input class="form-control" type="text" ng-model="war.occupation" placeholder="Occupation">
+                    <label>Verb</label>
+                    <input class="form-control" type="text" ng-model="war.verb1" placeholder="Verb">
+                    <label>Place</label>
+                    <input class="form-control" type="text" ng-model="war.place" placeholder="Place">
+                </div>
+
+                <div class="col-md-4">
+                    <label>Verb ending in "ing"</label>
+                    <input class="form-control" type="text" ng-model="war.verbing1" placeholder="Verb ending in ing">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="war.noun4" placeholder="Noun">
+                    <label>Verb ending in "ing"</label>
+                    <input class="form-control" type="text" ng-model="war.verbing2" placeholder="Verb ending in ing">
+                    <label>Noun(plural)</label>
+                    <input class="form-control" type="text" ng-model="war.noun_plural" placeholder="Noun(plural)">
+                    <label>Noun</label>
+                    <input class="form-control" type="text" ng-model="war.noun5" placeholder="Noun">
+                    <label>Emotion</label>
+                    <input class="form-control" type="text" ng-model="war.emotion" placeholder="Emotion">
+                </div>
+
+                <div class="col-md-4">
+                    <uib-accordion>
+                        <uib-accordion-group is-open="true" panel-class="panel-primary">
+                            <uib-accordion-heading>
+                                Ancient Proverbs
+                            </uib-accordion-heading>
                             <p>It was durring the <span><b>{{ war.noun1 }}</b></span> when I was running through a
                                 <span><b>{{ war.noun2 }}</b></span> when a <span><b>{{ war.noun3 }}</b></span> went off next to my platoon. Our
                                 <span><b>{{ war.occupation }}</b></span> yelled for us to <span><b>{{ war.verb1 }}</b></span> to the nearest <span><b>{{ war.place }}</b></span> we could find. When we got to the <span><b>{{ war.place }}</b></span> we <span><b>{{ war.verbing1 }}</b></span>                                to start a fire. As were starting the fire the enemy saw the
                                 <span><b>{{ war.noun4 }}</b></span> from the fire and started <span><b>{{ war.verbing2 }}</b></span>
                                 <span><b>{{ war.noun_plural }}</b></span> at us. We all quickly ducked behind the <span><b>{{ war.noun5 }}</b></span> at the <span><b>{{ war.place }}</b></span> and returned fire. We quickly eliminated the enemy and were
                                 <span><b>{{ war.emotion }}</b></span>
-                            </p>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="tab-pane" id="proverb">
-                <!--User Input-->
-                <form class="col-md-6 col-md-offset-3">
-                    <div class="form-group">
-                        <div class="col-md-6">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="proverb.noun1" placeholder="Noun">
-                            <label>Number</label>
-                            <input class="form-control" type="text" ng-model="proverb.number" placeholder="Number">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="proverb.noun2" placeholder="Noun">
-                            <label>Adjective</label>
-                            <input class="form-control" type="text" ng-model="proverb.adj1" placeholder="Adjective">
-                            <label>Verb ending in s</label>
-                            <input class="form-control" type="text" ng-model="proverb.verbs1" placeholder="Verb ending in s">
-                            <label>Adjective</label>
-                            <input class="form-control" type="text" ng-model="proverb.adj2" placeholder="Adjective">
-                        </div>
-                        <div class="col-md-6">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="proverb.noun3" placeholder="Noun">
-                            <label>Adjective</label>
-                            <input class="form-control" type="text" ng-model="proverb.adj3" placeholder="Adjective">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="proverb.noun4" placeholder="Noun">
-                            <label>Noun</label>
-                            <input class="form-control" type="text" ng-model="proverb.noun5" placeholder="Noun">
-                            <label>Verb ending in s</label>
-                            <input class="form-control" type="text" ng-model="proverb.verbs2" placeholder="Verb ending in s">
-                        </div>
-                    </div>
-                </form>
-                <!--Madlib-->
-                <form class="col-md-6 col-md-offset-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Ancient Proverbs</h3>
-                        </div>
-                        <div class="panel-body">
-                            <p>"A/An <span><b>{{ proverb.noun1 }}</b></span> in the hand is worth <span><b>{{ proverb.number }}</b></span> in the
-                                <span><b>{{ proverb.noun2 }}</b></span>."</p>
-                            <p>"A/An <span><b>{{ proverb.adj1 }}</b></span> mouth <span><b>{{ proverb.verbs1 }}</b></span> no feet."</p>
-                            <p>"A/An <span><b>{{ proverb.adj2 }}</b></span> <span><b>{{ proverb.noun3 }}</b></span> believes anything, but a <span><b>{{ proverb.adj3}}</b></span> <span><b>{{ proverb.noun3 }}</b></span> gives though to his <span><b>{{ proverb.noun4 }}</b></span>."</p>
-                            <p>"A <span><b>{{ proverb.noun5 }}</b></span> in time <span><b>{{ proverb.verbs2 }}</b></span>."</p>
-                        </div>
-                    </div>
-                </form>
+                        </uib-accordion-group>
+                    </uib-accordion>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </uib-tab>
+
+
+
+
+
+
+
+
+
+</uib-tabset>

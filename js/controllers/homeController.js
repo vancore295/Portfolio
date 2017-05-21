@@ -1,7 +1,7 @@
 angular.module('portfolioApp').controller('homeController', ['$scope',
     function($scope) {
         $scope.MenuItems = [{
-                route: 'unity',
+                route: 'unityGames',
                 href: '',
                 target: '',
                 linkLabel: 'Unity Games',
@@ -37,7 +37,7 @@ angular.module('portfolioApp').controller('homeController', ['$scope',
                 showLabel: true
             },
             {
-                route: 'gamejams',
+                route: 'gameJams',
                 href: '',
                 target: '',
                 linkLabel: 'Game Jams',
@@ -92,12 +92,12 @@ angular.module('portfolioApp').controller('homeController', ['$scope',
 
         $(document).ready(function() {
 
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
+            // $("#menu-toggle").click(function(e) {
+            // e.preventDefault();
+            // $("#wrapper").toggleClass("toggled");
+            // });
 
-            $(".menuitem").css("z-index", -10);
+            // $(".menuitem").css("z-index", -10);
             setInterval(rotate, 3000 / 360);
             $(document).mousemove(function(e) {
                 var docWidth = $(document).width();
@@ -117,15 +117,15 @@ angular.module('portfolioApp').controller('homeController', ['$scope',
                     speed = maxspeed;
                 }
             });
-            $(".menuitem").hover(function() {
-                    $(this).animate({ "width": 150, "height": 150 }, 100);
-                    $(this).css("z-index", 10);
-                },
-                function() {
-                    $(this).animate({ "width": 125, "height": 125 }, 100);
-                    $(this).css("z-index", -10);
-                }
-            );
+            /*            $(".menuitem").hover(function() {
+                                $(this).animate({ "width": 150, "height": 150 }, 100);
+                                $(this).css("z-index", 10);
+                            },
+                            function() {
+                                $(this).animate({ "width": 125, "height": 125 }, 100);
+                                $(this).css("z-index", -10);
+                            }
+                        );*/
 
         });
     }

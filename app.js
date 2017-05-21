@@ -1,4 +1,4 @@
-var app = angular.module('portfolioApp', ['ui.router', 'ui.bootstrap', 'ui.bootstrap']);
+var app = angular.module('portfolioApp', ['ui.router', 'ui.bootstrap', 'ngAnimate']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.when("", "/home");
