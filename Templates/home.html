@@ -1,32 +1,14 @@
-	<div class="page-container-fluid">
-		<div class="">
-			<div class="jumbotron" id="welcome">
-				<div class="container">
-					<h1>Welcome to Agassou Studios</h1>
-				</div>
-			</div>
-			<div class="container">
-				<div class="menuitem">
-					<a ui-sref="unity">Unity Games</a>
-				</div>
-
-				<div class="menuitem">
-					<a href="#contact" data-toggle="modal">Contact</a>
-				</div>
-
-				<div class="menuitem">
-					<a ui-sref="resume">Resume</a>
-				</div>
-
-				<div class="menuitem">
-					<a ui-sref="gamejams">Game Jams</a>
-				</div>
-
-				<div class="menuitem">
-					<a data-toggle="tooltip" data-placement="left" title="Github" href="https://github.com/vancore295" target="_blank"><img src="img/GitHub-Mark-64px.png"></img>
-					</a>
-				</div>
-			</div>
-
-		</div>
-	</div>
+<div class="page-container-fluid">
+    <div class="">
+        <div class="jumbotron" id="welcome">
+            <div class="container">
+                <h1>Welcome to Agassou Studios</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div ng-repeat="item in MenuItems track by $index">
+                <menu-item item-info="item"></menu-item>
+            </div>
+        </div>
+    </div>
+</div>

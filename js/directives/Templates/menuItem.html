@@ -1,0 +1,22 @@
+<div ng-if="itemInfo.route != ''" class="menuitem">
+    <a data-toggle="{{itemInfo.dataToggle}}" data-placement="{{itemInfo.dataPlacement}}" title="{{itemInfo.title}}" target="{{itemInfo.target}}" ui-sref="{{ itemInfo.route }}">
+        <div ng-show="{{itemInfo.showLabel}}">
+            {{ itemInfo.linkLabel }}
+        </div>
+
+        <div ng-if="itemInfo.showImage">
+            <img src="{{ itemInfo.imageSource }}"></img>
+        </div>
+    </a>
+</div>
+<div ng-if="itemInfo.href != ''" class="menuitem">
+    <a data-toggle="{{itemInfo.dataToggle}}" data-placement="{{itemInfo.dataPlacement}}" title="{{itemInfo.title}}" target="{{itemInfo.target}}" href="{{ itemInfo.href }}">
+        <div ng-show="{{itemInfo.showLabel}}">
+            {{ itemInfo.linkLabel }}
+        </div>
+
+        <div ng-if="itemInfo.showImage">
+            <img src="{{ itemInfo.imageSource }}"></img>
+        </div>
+    </a>
+</div>

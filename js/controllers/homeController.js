@@ -1,7 +1,68 @@
 angular.module('portfolioApp').controller('homeController', ['$scope',
-
-
     function($scope) {
+        $scope.MenuItems = [{
+                route: 'unity',
+                href: '',
+                target: '',
+                linkLabel: 'Unity Games',
+                imageSource: '',
+                dataToggle: '',
+                dataPlacement: '',
+                title: '',
+                showImage: false,
+                showLabel: true
+            },
+            {
+                route: '',
+                href: '#contact',
+                target: '',
+                linkLabel: 'Contact',
+                imageSource: '',
+                dataToggle: '',
+                dataPlacement: '',
+                title: '',
+                showImage: false,
+                showLabel: true
+            },
+            {
+                route: 'resume',
+                href: '',
+                target: '',
+                linkLabel: 'Resume',
+                imageSource: '',
+                dataToggle: '',
+                dataPlacement: '',
+                title: '',
+                showImage: false,
+                showLabel: true
+            },
+            {
+                route: 'gamejams',
+                href: '',
+                target: '',
+                linkLabel: 'Game Jams',
+                imageSource: '',
+                dataToggle: '',
+                dataPlacement: '',
+                title: '',
+                showImage: false,
+                showLabel: true
+            },
+            {
+                route: '',
+                href: 'https://github.com/vancore295',
+                target: '_blank',
+                linkLabel: 'Github',
+                imageSource: 'img/GitHub-Mark-64px.png',
+                dataToggle: 'tooltip',
+                dataPlacement: 'left',
+                title: 'Github',
+                showImage: true,
+                showLabel: false
+            },
+        ]
+
+
         var maxspeed = 0.05;
         var minspeed = 0.01;
 
