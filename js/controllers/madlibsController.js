@@ -5,6 +5,5 @@ angular.module('portfolioApp').controller('madlibsController', ['$scope', functi
         for (var word in words) {
             words[word] = '';
         }
-        return words;
     }
 }]);

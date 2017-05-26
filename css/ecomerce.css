@@ -1,140 +1,133 @@
-body{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.card{
-	overflow: hidden;
-	position: relative;
-	width: 25%;
-	display: inline-block;
-	
-	margin-top: 2px;
-	margin-bottom: 2px;
-	margin-left: 2px;
-	margin-right: 2px;
-	
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
-	
-	border-bottom: solid;
-	border-bottom-width: 1px;
-	
-	width: 25%;
-	height: 10%;
-	
-	z-index: 0;
+#shopnav {
+    background-color: white;
+    border-color: white;
+    border-radius: 0%;
 }
 
-.title{
-	text-align: center;
-	text-overflow: warp;
-	font-weight: bold;
-	font-size: 20px;
-	background: #2F4F4F;
-	color: #FFD700;
-	opacity: 2;
-
-	padding-top: 2px;
-	padding-bottom: 2px;
-	padding-left: 2px;
-	padding-right: 2px;
-	
-	position: relative;
-	z-index: -1;
+#shopbody {
+    background-color: white;
 }
 
-.title:hover{
-	color:#2F4F4F;
-	Background:#FFD700;
-	
-	transform: scale(1.25,1.25);
+.card {
+    overflow: hidden;
+    position: relative;
+    width: 25%;
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    width: 25%;
+    height: 10%;
+    z-index: 0;
 }
 
-.price{
-	text-overflow: ellipsis;
-	text-align: center;
-	font-weight: bold;
-	font-size: 100%;
-	color: #FFD700;
-	background: #2F4F4F;
-	
-	/*position: relative;*/
-	float: right;
-	
-	width: 20%;
-	height: 20%;
-	
-	/*top right bottom left*/
-	margin:10px 10px 10px 10px;
-	
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 0px;
-	padding-right: 0px;
-		
-	border-top-left-radius: 0%;
-	border-bottom-left-radius: 50%;
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 0%;
-	
-	z-index: 1;
+.title {
+    text-align: center;
+    text-overflow: warp;
+    font-weight: bold;
+    font-size: 20px;
+    background: #2F4F4F;
+    color: #FFD700;
+    opacity: 2;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: relative;
+    z-index: -1;
 }
 
-.price:hover{
-	color:#2F4F4F;
-	Background:#FFD700;
-	
-	transform: scale(1.25,1.25);
+.title:hover {
+    color: #2F4F4F;
+    Background: #FFD700;
+    transform: scale(1.25, 1.25);
 }
 
-.price:focus{
-	color: #FFD700;
-	background: #2F4F4F;
+.price {
+    text-overflow: ellipsis;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    color: #FFD700;
+    background: #2F4F4F;
+    /*position: relative;*/
+    float: right;
+    width: 20%;
+    height: 20%;
+    /*top right bottom left*/
+    margin: 10px 10px 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 0%;
+    z-index: 1;
 }
 
-.cart{
-	text-align: center;
-	font-weight: bold;
-	font-size: 100%;
-	color: #FFD700;
-	background: #2F4F4F;
-	
-	width: 15%;
-	height: 15%;
-	
-	/*top right bottom left*/
-	margin:10px 10px 10px 10px;
-	
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
-		
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 00%;
-	border-top-right-radius: 0%;
-	border-bottom-right-radius: 50%;
-	
-	z-index: 1;
+.price:hover {
+    color: #2F4F4F;
+    Background: #FFD700;
+    transform: scale(1.25, 1.25);
 }
 
-.cart:hover{
-	color:#2F4F4F;
-	Background:#FFD700;
-	
-	transform: scale(1.25,1.25);
+.price:focus {
+    color: #FFD700;
+    background: #2F4F4F;
 }
 
-.cart:focus{
-	color: #FFD700;
-	background: #2F4F4F;
+.cart {
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    color: #FFD700;
+    background: #2F4F4F;
+    width: 15%;
+    height: 15%;
+    /*top right bottom left*/
+    margin: 10px 10px 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 00%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 50%;
+    z-index: 1;
 }
 
-.icon{
-	max-height: 100%;
-	max-width: 100%;
-	
-	z-index: -2;
+.cart:hover {
+    color: #2F4F4F;
+    Background: #FFD700;
+    transform: scale(1.25, 1.25);
+}
+
+.cart:focus {
+    color: #FFD700;
+    background: #2F4F4F;
+}
+
+.icon {
+    max-height: 100%;
+    max-width: 100%;
+    z-index: -2;
+}
+
+.shop-frame {
+    outline-style: groove;
+    outline-color: white;
 }

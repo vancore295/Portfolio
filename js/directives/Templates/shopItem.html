@@ -1,10 +1,10 @@
-<h1 class="title">{{ info.title }}</h1>
-<div ng-init="imgsrc= info.imageMain " ng-mouseover="imgsrc=info.imageAlt" ng-mouseout="imgsrc=info.imageMain">
-	<img class="icon" ng-src="{{ imgsrc }}" />
+<h1 class="title">{{ item.title }}</h1>
+<div ng-init="imgsrc= item.imageMain" ng-mouseover="ImageSwitch(item)" ng-mouseout="ImageSwitch(item)">
+    <img class="icon" ng-src="{{ imgsrc }}" />
 </div>
-<button type="button" class="btn btn-default cart" data-toggle="tooltip" data-placement="right" title="Add to cart">
+<button type="button" class="btn btn-default cart" data-toggle="tooltip" data-placement="right" title="Add to cart" ng-click="AddToCart(item)">
 	<span class="glyphicon glyphicon-shopping-cart"></span>
 </button>
 <button class="btn btn-default price">
-	<span>{{ info.price | currency:"$":0  }}</span>
+	<span>{{ item.price | currency:"$":0  }}</span>
 </button>

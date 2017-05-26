@@ -1,9 +1,11 @@
-app.directive('storeItem',function(){
-	return{
-		restrict:'E',
-		scope:{
-			info:'='
-		},
-		templateUrl:'js/directives/shopItem.html'
-	};
+angular.module('portfolioApp').directive('storeItem', function() {
+    return {
+        restrict: 'E',
+        scope: {
+            item: '=',
+            cart: '='
+        },
+        templateUrl: 'js/directives/Templates/shopItem.html',
+        controller: 'shopItemController'
+    };
 });

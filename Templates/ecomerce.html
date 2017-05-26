@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="eng">
-
-<head>
-    <!--Bootstrap CSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/ecomerce.css" rel="stylesheet">
-    <title>Shop</title>
-</head>
-
-<body ng-app="shop">
-    <nav class="navbar navbar-default">
+<div class="container well well-lg">
+    <nav class="navbar navbar-default" id="#shopnav">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="#shopbody">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#shopnav" aria-expande="false">
 					<span class="sr-only">Toggle Navigation</span>
@@ -34,6 +24,7 @@
                 <div class="nav navbar-nav navbar-right">
                     <button type="button" class="btn btn-default btn-lg" data-toggle="tooltip" data-placement="left" title="Check Out">
 						<span class="glyphicon glyphicon-shopping-cart">
+                            <i>{{ Cart.length }}</i>
 						<a href="#"></a>
 					</span>
 					</button>
@@ -41,13 +32,20 @@
             </div>
         </div>
     </nav>
+
     <div class="container-fluid">
-        <div class="main" ng-controller="ShopControl">
-            <div class="container-fluid">
-                <div class="card" ng-repeat="hood in hoodies" id="showcase">
-                    <store-item info="hood"></store-item>
-                </div>
+        <div class="row">
+            <div class="card" ng-repeat="hood in hoodies" id="showcase">
+                <store-item item="hood" cart="Cart"></store-item>
             </div>
         </div>
+        <div class="row">
+            <div class="card" ng-repeat="shirt in shirts" id="showcase">
+                <store-item item="shirt" cart="Cart"></store-item>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
     </div>
-</body>
+</div>

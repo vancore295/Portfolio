@@ -1,5 +1,5 @@
-angular.module('portfolioApp').controller('homeController', ['$scope',
-    function($scope) {
+angular.module('portfolioApp').controller('homeController', ['$scope', '$document',
+    function($scope, $document) {
         $scope.MenuItems = [{
                 route: 'unityGames',
                 href: '',
@@ -60,7 +60,7 @@ angular.module('portfolioApp').controller('homeController', ['$scope',
                 showImage: true,
                 showLabel: false
             },
-        ]
+        ];
 
 
         var maxspeed = 0.05;

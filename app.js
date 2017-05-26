@@ -28,4 +28,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "Templates/madlibs.html",
             controller: 'madlibsController'
         })
+        .state("shop", {
+            url: "/shop",
+            templateUrl: "Templates/ecomerce.html",
+            controller: 'eSchopController'
+        })
 });
