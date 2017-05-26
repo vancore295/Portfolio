@@ -1,5 +1,5 @@
-angular.module('portfolioApp').controller('shopItemController', ['$scope', 'ShopService',
-    function($scope, ShopService) {
+angular.module('portfolioApp').controller('shopItemController', ['$scope', '$rootScope', 'ShopService',
+    function($scope, $rootScope, ShopService) {
 
         $scope.ImageSwitch = function(item) {
             if ($scope.imgsrc == item.imageMain) {
@@ -15,7 +15,7 @@ angular.module('portfolioApp').controller('shopItemController', ['$scope', 'Shop
 
 
         $scope.AddToCart = function(item) {
-            $scope.$emit("NewItemInCart", item);
+            $rootScope.$broadcast("NewItemInCart", item);
         }
 
     }

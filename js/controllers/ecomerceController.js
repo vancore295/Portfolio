@@ -1,4 +1,4 @@
-angular.module('portfolioApp').controller('eSchopController', ['$scope', function($scope) {
+angular.module('portfolioApp').controller('eSchopController', ['$scope', '$rootScope', function($scope, $rootScope) {
 
     $scope.tests = [{
         title: "hoodie",
