@@ -22,9 +22,10 @@
                     <li><a>FAQ</a></li>
                 </ul>
                 <div class="nav navbar-nav navbar-right">
-                    <button type="button" class="btn btn-default btn-lg" data-toggle="tooltip" data-placement="left" title="Check Out">
+                    <button uib-popover-html="GetPopoverContent(Cart)" popover-trigger="mouseenter" popover-placement="bottom" type="button" class="btn btn-default btn-lg">
 						<span class="glyphicon glyphicon-shopping-cart"></span>
-                    <small>{{ Cart.length }}</small>
+                    <sub>{{ Cart.length }}</sub>
+                    <sup> ${{ Total }} </sup>
 					</button>
                 </div>
             </div>

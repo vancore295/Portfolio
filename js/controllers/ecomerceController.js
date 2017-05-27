@@ -1,4 +1,4 @@
-angular.module('portfolioApp').controller('eSchopController', ['$scope', '$rootScope', function($scope, $rootScope) {
+angular.module('portfolioApp').controller('eSchopController', ['$scope', '$rootScope', '$sce', function($scope, $rootScope, $sce) {
 
     $scope.tests = [{
         title: "hoodie",
@@ -88,8 +88,42 @@ angular.module('portfolioApp').controller('eSchopController', ['$scope', '$rootS
 
 
     $scope.Cart = [];
-
+    $scope.Total = 0;
     $scope.$on("NewItemInCart", function(e, obj) {
         $scope.Cart.push(obj);
+        $scope.Total = $scope.SumCart($scope.Cart);
     });
+
+
+    $scope.SumCart = function(cart) {
+        var total = 0;
+        for (var i = 0; i < cart.length; i++) {
+            total += cart[i].price;
+        }
+
+        return total;
+    }
+
+    $scope.BuildCartHTML = function(cart) {
+        var carthtml = "<ul>";
+        for (var i = 0; i < cart.length; i++) {
+            carthtml += "<li>" + cart[i].title + " : $" + cart[i].price + "</li>";
+        }
+
+        carthtml += "</ul>";
+
+        return carthtml;
+    }
+
+    // $scope.CartHTML = "<div ng-repeat='item in Cart'>{{item.title}} {{item.price}}</div>";
+    var trusted = {};
+
+    $scope.GetPopoverContent = function(content) {
+        content = $scope.BuildCartHTML(content)
+        return trusted[content] || (trusted[content] = $sce.trustAsHtml(content))
+
+    }
+
+
+    $scope.htmlPopover = $sce.trustAsHtml("<div ng-repeat='item in Cart'>{{item.title}} {{item.price}}</div>");
 }]);
