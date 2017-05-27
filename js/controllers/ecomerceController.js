@@ -15,19 +15,19 @@ angular.module('portfolioApp').controller('eSchopController', ['$scope', '$rootS
         },
         {
             title: "Gradiant Hoodie",
-            imageMain: 'img/shop/hoodies/hol_160345_01_model2.jpg',
-            imageAlt: 'img/shop/hoodies/hol_160345_01_model3.jpg',
+            imageMain: '../img/shop/hoodies/hol_160345_01_model2.jpg',
+            imageAlt: '../img/shop/hoodies/hol_160345_01_model3.jpg',
             price: 25
         },
         {
             title: "Stranger Things",
-            imageMain: 'img/shop/hoodies/stranger_hoodie_darkheather.jpg',
+            imageMain: '../img/shop/hoodies/stranger_hoodie_darkheather.jpg',
             imageAlt: '',
             price: 25
         },
         {
             title: "Leather",
-            imageMain: 'img/shop/hoodies/EL-SUM-PMC-BLU.jpg',
+            imageMain: '../img/shop/hoodies/EL-SUM-PMC-BLU.jpg',
             imageAlt: '',
             price: 75
         }
@@ -35,25 +35,25 @@ angular.module('portfolioApp').controller('eSchopController', ['$scope', '$rootS
 
     $scope.shirts = [{
             title: "Cat Love",
-            imageMain: 'img/shop/shirts/cat1.jpg',
-            imageAlt: 'img/shop/shirts/cat2.jpg',
+            imageMain: '../img/shop/shirts/cat1.jpg',
+            imageAlt: '../img/shop/shirts/cat2.jpg',
             price: 10
         },
         {
             title: "9 and 3/4",
-            imageMain: 'img/shop/shirts/934.jpg',
+            imageMain: '../img/shop/shirts/934.jpg',
             imageAlt: '',
             price: 10
         },
         {
             title: "Geometric",
-            imageMain: 'img/shop/shirts/shapes.jpg',
+            imageMain: '../img/shop/shirts/shapes.jpg',
             imageAlt: '',
             price: 10
         },
         {
             title: "AIA",
-            imageMain: 'img/shop/shirts/AIA.png',
+            imageMain: '../img/shop/shirts/AIA.png',
             imageAlt: '',
             price: 10
         }
