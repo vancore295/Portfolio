@@ -1,19 +1,39 @@
 angular.module('portfolioApp').config(['$stateProvider', '$urlRouterProvider',
-    function ($stateProvider, $urlRouterProvider) {
+    function($stateProvider, $urlRouterProvider) {
 
         $urlRouterProvider.when("", '/home');
         $urlRouterProvider.otherwise('/home');
 
         $stateProvider
-            .state('home', {
-                url: '/home',
-                templateUrl: 'Templates/home.html',
+            .state("home", {
+                url: "/home",
+                templateUrl: "Templates/home.html",
                 controller: 'homeController'
             })
-            .state('resume', {
-                url: '/resume',
-                templateUrl: 'Templates/resume.html',
+            .state("resume", {
+                url: "/resume",
+                templateUrl: "Templates/resume.html",
                 controller: 'resumeController'
+            })
+            .state("unityGames", {
+                url: "/unityGames",
+                templateUrl: "Templates/unity.html",
+                controller: 'unityController'
+            })
+            .state("gameJams", {
+                url: "/gameJams",
+                templateUrl: "Templates/GameJams.html",
+                controller: 'gamejamController'
+            })
+            .state("madlibs", {
+                url: "/madlibs",
+                templateUrl: "Templates/madlibs.html",
+                controller: 'madlibsController'
+            })
+            .state("shop", {
+                url: "/shop",
+                templateUrl: "Templates/ecomerce.html",
+                controller: 'eSchopController'
             })
 
     }

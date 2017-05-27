@@ -13,10 +13,10 @@ angular.module('portfolioApp').controller('homeController', ['$scope', '$documen
                 showLabel: true
             },
             {
-                route: '',
-                href: '#contact',
+                route: 'shop',
+                href: '',
                 target: '',
-                linkLabel: 'Contact',
+                linkLabel: 'Shop',
                 imageSource: '',
                 dataToggle: '',
                 dataPlacement: '',
@@ -90,14 +90,14 @@ angular.module('portfolioApp').controller('homeController', ['$scope', '$documen
             })
         };
 
-        $(document).ready(function() {
+        /*$(document).ready(function() {
 
-            // $("#menu-toggle").click(function(e) {
-            // e.preventDefault();
-            // $("#wrapper").toggleClass("toggled");
-            // });
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
 
-            // $(".menuitem").css("z-index", -10);
+            $(".menuitem").css("z-index", -10);
             setInterval(rotate, 3000 / 360);
             $(document).mousemove(function(e) {
                 var docWidth = $(document).width();
@@ -117,16 +117,16 @@ angular.module('portfolioApp').controller('homeController', ['$scope', '$documen
                     speed = maxspeed;
                 }
             });
-            /*            $(".menuitem").hover(function() {
-                                $(this).animate({ "width": 150, "height": 150 }, 100);
-                                $(this).css("z-index", 10);
-                            },
-                            function() {
-                                $(this).animate({ "width": 125, "height": 125 }, 100);
-                                $(this).css("z-index", -10);
-                            }
-                        );*/
+            $(".menuitem").hover(function() {
+                    $(this).animate({ "width": 150, "height": 150 }, 100);
+                    $(this).css("z-index", 10);
+                },
+                function() {
+                    $(this).animate({ "width": 125, "height": 125 }, 100);
+                    $(this).css("z-index", -10);
+                }
+            );
 
-        });
+        });*/
     }
 ]);

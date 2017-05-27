@@ -115,7 +115,7 @@ angular.module('portfolioApp').controller('eSchopController', ['$scope', '$rootS
         return carthtml;
     }
 
-    // $scope.CartHTML = "<div ng-repeat='item in Cart'>{{item.title}} {{item.price}}</div>";
+
     var trusted = {};
 
     $scope.GetPopoverContent = function(content) {
@@ -123,7 +123,4 @@ angular.module('portfolioApp').controller('eSchopController', ['$scope', '$rootS
         return trusted[content] || (trusted[content] = $sce.trustAsHtml(content))
 
     }
-
-
-    $scope.htmlPopover = $sce.trustAsHtml("<div ng-repeat='item in Cart'>{{item.title}} {{item.price}}</div>");
 }]);

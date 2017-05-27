@@ -1,5 +1,5 @@
-angular.module('portfolioApp').controller('shopItemController', ['$scope', '$rootScope', 'ShopService',
-    function($scope, $rootScope, ShopService) {
+angular.module('portfolioApp').controller('shopItemController', ['$scope', '$rootScope',
+    function($scope, $rootScope) {
 
         $scope.ImageSwitch = function(item) {
             if ($scope.imgsrc == item.imageMain) {

@@ -1,7 +1,8 @@
 var app = angular.module('portfolioApp', ['ui.router', 'ui.bootstrap', 'ngAnimate']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.when("", "/home");
+    $urlRouterProvider.when("", '/home');
+    $urlRouterProvider.otherwise('/home');
     $stateProvider
         .state("home", {
             url: "/home",
